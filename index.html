@@ -1,1 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EETEPA Magalhães Barata</title>
+  <style>
+    :root {
+      /* Cores institucionais SECTET (azul predominante e verde de apoio) */
+      --azul-sectet: #0a3a5e;
+      --azul-claro-sectet: #1f6fa8;
+      --verde-sectet: #2e7d32;
+      --cinza-fundo: #f5f6f8;
+      --branco: #ffffff;
+      --texto-padrao: #333333;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--cinza-fundo);
+      color: var(--texto-padrao);
+    }
+
+    header {
+      background: var(--azul-sectet);
+      color: var(--branco);
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: var(--branco);
+      margin-right: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .banner {
+      background: linear-gradient(135deg, var(--azul-sectet), var(--azul-claro-sectet));
+      color: var(--branco);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .banner h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h3 {
+      color: var(--azul-sectet);
+      border-left: 6px solid var(--verde-sectet);
+      padding-left: 12px;
+      margin-bottom: 15px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--branco);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-top: 4px solid var(--azul-claro-sectet);
+    }
+
+    a {
+      color: var(--azul-claro-sectet);
+    }
+
+    a:hover {
+      color: var(--verde-sectet);
+    }
+
+    footer {
+      background: var(--azul-sectet);
+      color: var(--branco);
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="display:flex;align-items:center;gap:15px;flex-wrap:wrap;">
+      <div style="width:70px;height:70px;background:#ffffff;border-radius:6px;display:flex;align-items:center;justify-content:center;color:#0a3a5e;font-weight:bold;font-size:12px;">LOGO<br>SECTET</div>
+      <div style="width:70px;height:70px;background:#ffffff;border-radius:6px;display:flex;align-items:center;justify-content:center;color:#0a3a5e;font-weight:bold;font-size:12px;">LOGO<br>EETEPA</div>
+      <div>
+        <h1>Escola de Ensino Técnico do Estado do Pará</h1>
+        <strong>EETEPA Magalhães Barata</strong>
+      </div>
+    </div>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#secretaria">Secretaria</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h2>Educação Técnica que transforma futuros</h2>
+    <p>Informações acadêmicas, horários e acesso ao boletim escolar</p>
+    <p style="margin-top:20px;">
+      <a href="https://www.proesc.com.br" target="_blank" style="background:#fff;color:#0b3c5d;padding:12px 20px;border-radius:6px;text-decoration:none;font-weight:bold;margin-right:10px;">Acessar Boletim (PROESC)</a>
+      <a href="#horarios" style="background:#e3e3e3;color:#0b3c5d;padding:12px 20px;border-radius:6px;text-decoration:none;font-weight:bold;">Ver Horários de Aula</a>
+    </p>
+  </section>
+
+  <main class="container">
+    <section class="section" id="sobre">
+      <h3>Sobre a Escola</h3>
+      <p>
+        A Escola de Ensino Técnico do Estado do Pará – <strong>EETEPA Magalhães Barata</strong>
+        é uma instituição pública vinculada à Secretaria de Estado de Ciência,
+        Tecnologia e Educação Profissional e Tecnológica (SECTET).
+      </p>
+      <p>
+        Nosso compromisso é oferecer educação técnica de qualidade,
+        preparando estudantes para o mercado de trabalho e para a vida cidadã.
+      </p>
+    </section>
+
+    <section class="section" id="secretaria">
+      <h3>Sobre a Secretaria (SECTET)</h3>
+      <p>
+        A SECTET é o órgão do Governo do Estado do Pará responsável pela
+        educação profissional e tecnológica, promovendo políticas públicas
+        voltadas à formação técnica, inovação e desenvolvimento social.
+      </p>
+    </section>
+
+    <section class="section" id="cursos">
+      <h3>Cursos Técnicos</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>Curso Técnico</h4>
+          <p>Descrição breve do curso técnico ofertado pela escola.</p>
+        </div>
+        <div class="card">
+          <h4>Curso Técnico</h4>
+          <p>Descrição breve do curso técnico ofertado pela escola.</p>
+        </div>
+        <div class="card">
+          <h4>Curso Técnico</h4>
+          <p>Descrição breve do curso técnico ofertado pela escola.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicos">
+      <h3>Serviços ao Aluno e Responsáveis</h3>
+      <ul>
+        <li><strong>Boletim e Notas:</strong> acesso exclusivo pelo sistema PROESC.</li>
+        <li><strong>Frequência Escolar:</strong> disponível no PROESC.</li>
+        <li><strong>Horário de Aula:</strong> divulgado pela escola conforme cada curso.</li>
+        <li><strong>Comunicados Oficiais:</strong> murais, site e redes sociais.</li>
+      </ul>
+      <p>
+        <a href="https://www.proesc.com.br" target="_blank">Clique aqui para acessar o PROESC</a>
+      </p>
+    </section>
+
+    <section class="section" id="horarios">
+      <h3>Horários de Aula</h3>
+      <p>
+        Os horários de aula são organizados por curso e turno.
+        A escola disponibiliza os horários atualizados no início de cada período letivo.
+      </p>
+      <p>
+        Em breve, os horários estarão disponíveis para consulta e download nesta página.
+      </p>
+    </section>
+
+    <section class="section" id="contato">
+      <h3>Contato</h3>
+      <p><strong>Endereço:</strong> Rua Municipalidade, s/n – Belém/PA</p>
+      <p><strong>Telefone:</strong> (xx) xxxx-xxxx</p>
+      <p><strong>E-mail:</strong> contato@eetepamagalhaesbarata.pa.gov.br</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 – EETEPA Magalhães Barata | SECTET – Governo do Pará</p>
+  </footer>
+
+</body>
+</html>
 
